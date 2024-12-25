@@ -7,9 +7,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.wolns.android.presentation.screens.FriendsScreen
-import com.wolns.android.presentation.screens.HomeScreen
-import com.wolns.android.presentation.screens.MeScreen
+import com.wolns.android.presentation.screens.friends.FriendsScreen
+import com.wolns.android.presentation.screens.home.HomeScreen
+import com.wolns.android.presentation.screens.me.MeScreen
 
 @Composable
 fun Navigation(

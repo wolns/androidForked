@@ -1,4 +1,4 @@
-package com.wolns.android.presentation.screens
+package com.wolns.android.presentation.screens.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -12,12 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun MeScreen() {
-    MeScreenContent()
+fun HomeScreen() {
+    HomeScreenContent()
 }
 
 @Composable
-private fun MeScreenContent() {
+private fun HomeScreenContent() {
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -26,13 +26,13 @@ private fun MeScreenContent() {
         Box(
             contentAlignment = Alignment.Center
         ) {
-            Text("Me Screen")
+            Text("Home Screen")
         }
     }
 }
 
 @Preview
 @Composable
-private fun MeScreenPreview() {
+private fun HomeScreenPreview() {
 
 }

@@ -1,4 +1,4 @@
-package com.wolns.android.presentation.screens
+package com.wolns.android.presentation.screens.me
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -12,12 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun FriendsScreen() {
-    FriendsScreenContent()
+fun MeScreen() {
+    MeScreenContent()
 }
 
 @Composable
-private fun FriendsScreenContent() {
+private fun MeScreenContent() {
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -26,13 +26,13 @@ private fun FriendsScreenContent() {
         Box(
             contentAlignment = Alignment.Center
         ) {
-            Text("Friends Screen")
+            Text("Me Screen")
         }
     }
 }
 
 @Preview
 @Composable
-private fun FriendsScreenScreenPreview() {
-    
+private fun MeScreenPreview() {
+
 }
