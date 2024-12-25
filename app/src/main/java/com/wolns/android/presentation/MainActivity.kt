@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     bottomBar = {
-                        BottomNavBar()
+                        BottomNavBar(navController)
                     }
                 ) { innerPadding ->
                     Navigation(

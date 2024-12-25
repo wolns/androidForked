@@ -10,15 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavHostController
 
 @Composable
-fun HomeScreen() {
-    HomeScreenContent()
+fun MeScreen() {
+    MeScreenContent()
 }
 
 @Composable
-private fun HomeScreenContent() {
+private fun MeScreenContent() {
     Surface(
         modifier = Modifier
             .fillMaxSize()
@@ -27,13 +26,13 @@ private fun HomeScreenContent() {
         Box(
             contentAlignment = Alignment.Center
         ) {
-            Text("Home Screen")
+            Text("Me Screen")
         }
     }
 }
 
 @Preview
 @Composable
-private fun HomeScreenPreview() {
+private fun MeScreenPreview() {
 
 }

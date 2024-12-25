@@ -5,11 +5,11 @@ import androidx.compose.animation.ExitTransition
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
-import androidx.navigation.Navigation
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
+import com.wolns.android.presentation.screens.FriendsScreen
 import com.wolns.android.presentation.screens.HomeScreen
+import com.wolns.android.presentation.screens.MeScreen
 
 @Composable
 fun Navigation(
@@ -26,7 +26,15 @@ fun Navigation(
         popExitTransition = { ExitTransition.None }
     ) {
         composable(NavigationDestinations.HOME) {
-            HomeScreen(navController)
+            HomeScreen()
+        }
+
+        composable(NavigationDestinations.FRIENDS) {
+            FriendsScreen()
+        }
+
+        composable(NavigationDestinations.ME) {
+            MeScreen()
         }
     }
 }

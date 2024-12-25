@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_nav_button">Главная</string>
+    <string name="friends_nav_button">Друзья</string>
+    <string name="me_nav_button">Профиль</string>
+</resources>
