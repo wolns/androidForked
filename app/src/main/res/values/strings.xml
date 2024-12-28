@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name" translatable="false">wolns</string>
-    <string name="home_nav_button">Home</string>
+    <string name="main_nav_button">Home</string>
     <string name="friends_nav_button">Friends</string>
     <string name="me_nav_button">Me</string>
+    <string name="connect_to__chip">Connect to %s</string>
+    <string name="WelcomeScreen_title">Welcome</string>
+    <string name="LogUp_button">Log Up</string>
+    <string name="LogIn_button">Log In</string>
+    <string name="name_text_field">Name</string>
+    <string name="login_text_field">Login</string>
+    <string name="password_text_field">Password</string>
 </resources>

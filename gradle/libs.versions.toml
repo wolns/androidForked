@@ -12,6 +12,7 @@ coil = "3.0.4"
 navigation = "2.8.5"
 paging = "3.3.5"
 ksp = "2.1.0-1.0.29"
+uiTooling = "1.7.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,6 +27,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 koin-bom = { module = "io.insert-koin:koin-bom", version.ref = "koinBom" }
 koin-androidx-startup = { module = "io.insert-koin:koin-androidx-startup" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-android = { module = "io.insert-koin:koin-android" }
 koin-androidx-compose-navigation = { module = "io.insert-koin:koin-androidx-compose-navigation" }
 koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koinAnnotations" }
 koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinAnnotations" }
@@ -40,6 +42,7 @@ navigation-compose = { module = "androidx.navigation:navigation-compose", versio
 
 paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging" }
 paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
 
 
 [plugins]

@@ -16,11 +16,11 @@ android {
 
     defaultConfig {
         applicationId = "com.wolns.android"
-        minSdk = 29
+        minSdk = 26
         targetSdk = 35
 
         val major = 0
-        val minor = 1
+        val minor = 2
         val patch = 0
         val suffix = "alpha"
         versionCode = major * 1000000 + minor * 1000 + patch
@@ -40,6 +40,7 @@ android {
                 "proguard-rules.pro"
             )
             signingConfig = signingConfigs.getByName("debug")
+            project.extensions.extraProperties["android.enableAppCompileTimeRClass"] = true
         }
         debug {
             isMinifyEnabled = false
@@ -73,7 +74,9 @@ dependencies {
     implementation(libs.koin.androidx.startup)
     implementation(libs.koin.androidx.compose)
     implementation(libs.koin.androidx.compose.navigation)
+    implementation(libs.koin.android)
     implementation(libs.koin.annotations)
+    debugImplementation(libs.androidx.ui.tooling)
     ksp(libs.koin.ksp.compiler)
 
     implementation(libs.retrofit)

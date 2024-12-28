@@ -1,4 +1,4 @@
-package com.wolns.android.presentation.navigation
+package com.wolns.android.presentation.screens.home
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
