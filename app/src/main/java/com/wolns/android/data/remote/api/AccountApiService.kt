@@ -9,6 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Headers
 import retrofit2.http.POST
 
 @Single
@@ -17,12 +18,22 @@ fun provigeAccountApiService(retrofit: Retrofit): AccountApiService =
 
 interface AccountApiService {
 
-    @POST("/v1/auth/token")
+    @POST("/api/v1/auth/token")
+    @Headers(
+        "Content-Type: application/json;charset=utf-8",
+        "Accept: application/json",
+//        "Accept-Encoding: *"
+    )
     suspend fun getAccessToken(@Body body: LoginRequestBody): AccessTokenResponse
 
-    @POST("/v1/users")
+    @POST("/api/v1/users")
+    @Headers(
+        "Content-Type: application/json;charset=utf-8",
+        "Accept: application/json",
+//        "Accept-Encoding: *"
+    )
     suspend fun logup(@Body body: LogupRequestBody): UserResponse
 
-    @GET("/v1/users/me")
+    @GET("/api/v1/users/me")
     suspend fun me(@Header("Authorization") token: String): UserResponse
 }
